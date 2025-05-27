@@ -75,7 +75,7 @@ addTodoButton1.onclick = function(){
 
 taskList.addEventListener("keydown", function(event){
   if (event.key == "Enter") {
-    addTodoButton()
+    addTodoButton();
   }
 });
 
