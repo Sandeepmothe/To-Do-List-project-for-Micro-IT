@@ -1,0 +1,135 @@
+body {
+  background: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  background: #ffffff;
+  padding: 2rem;             /*1rem = 16px*/
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e217c;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.input-group button {
+  padding: 0 1rem;
+  border: none;
+  background: #1e217c;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0 8px 8px 0; 
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background: #15185e;
+}
+
+.todo-items-container{
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item-container{
+  margin-top: 1rem;
+  background: #f5cfcf;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.todo-item-container:hover {
+  background: #e2e6ff;
+}
+
+.checkbox-input{
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px 5px 0;
+  cursor: pointer;
+
+}
+
+.checkbox-label {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  width: 82%;
+  margin: 0px;
+  padding: 5px 5px 5px 0;
+  cursor: text;
+  flex-shrink: 1;
+  overflow-wrap: break-word;
+}
+
+.checked{
+  text-decoration: line-through;
+}
+
+.delete-icon{
+  width: 20px;
+  height: 20px;
+  margin: 5px 0 5px 0;
+  text-align: right;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 1rem;
+  gap: 0.5rem; 
+}
+
+.button-row button {
+  flex: 1; /* equal width for all buttons */
+  background-color: #6c63ff; /* Soft purple */
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.button-row button:hover {
+  background-color: #574fd6;
+  transform: scale(1.05);
+}
+
+.button-row button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
