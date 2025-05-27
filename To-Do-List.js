@@ -3,6 +3,7 @@ let addTodoButton1 = document.getElementById("addTodoButton");
 let saveTodoButton = document.getElementById("saveButton");
 let todoUndoButton = document.getElementById("undoButton");
 let todoResetButton = document.getElementById("resetButton");
+let taskInput = document.getElementById("taskInput");
 let deletedTodosStock = [];
 
 
